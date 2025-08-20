@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.round2-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black; /* background fill */
+}
+
+.round2-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fit; /* fills screen, crops to avoid gaps */
+}
+
+/* Login form positioning */
+.login-form {
+  position: absolute;
+  top: 52%; /* just below "ROUND 2" */
+  left: 68%; /* aligned under "ROUND 2" */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+}
+
+/* Transparent input fields */
+.login-form input {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Gold gradient button */
+.login-form button {
+  background: linear-gradient(145deg, #c79b32, #a97a1c);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(199, 155, 50, 0.6);
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  box-shadow: 0 0 15px rgba(199, 155, 50, 1);
+}
